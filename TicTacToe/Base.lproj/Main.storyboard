@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gato" translatesAutoresizingMaskIntoConstraints="NO" id="Tgl-yw-ahO">
+                                <rect key="frame" x="19.666666666666657" y="249" width="353.66666666666674" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tgl-yw-ahO" secondAttribute="height" multiplier="1:1" id="jg1-sI-wOe"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="avT-gM-p7K">
+                                <rect key="frame" x="83" y="290.66666666666669" width="227" height="271.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="UeM-fB-sZW">
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="85"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im6-iO-MHV">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQy-Ix-b5o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-PE-2uq">
+                                                <rect key="frame" x="92.333333333333343" y="0.0" width="42.333333333333343" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0w-kI-Nu2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-Ag-1xQ">
+                                                <rect key="frame" x="184.66666666666669" y="0.0" width="42.333333333333343" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHW-yU-4RN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="0G7-hs-xpc">
+                                        <rect key="frame" x="0.0" y="93" width="227" height="85"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaf-uO-Jp2">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bX-Lk-cln"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exi-we-xs3">
+                                                <rect key="frame" x="92.333333333333343" y="0.0" width="42.333333333333343" height="85"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="KqJ-88-Y18"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdJ-Hj-id6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSJ-5U-rkT">
+                                                <rect key="frame" x="184.66666666666669" y="0.0" width="42.333333333333343" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dnE-M1-jpu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="nTf-O4-EWO">
+                                        <rect key="frame" x="0.0" y="186" width="227" height="85"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5c-77-gEO">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYy-Mz-GJA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ya5-SK-YJx">
+                                                <rect key="frame" x="92.333333333333343" y="0.0" width="42.333333333333343" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEG-Rx-poX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzF-lw-hTC">
+                                                <rect key="frame" x="184.66666666666669" y="0.0" width="42.333333333333343" height="85"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="/">
+                                                    <fontDescription key="titleFontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="64"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="handletap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r78-dS-irx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3d-ed-YeI">
+                                <rect key="frame" x="121.00000000000001" y="643.66666666666663" width="151.33333333333337" height="92.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="64"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startgame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMG-di-Dav"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tgl-yw-ahO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4dV-yH-RQK"/>
+                            <constraint firstItem="avT-gM-p7K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8NS-iR-bUy"/>
+                            <constraint firstItem="Tgl-yw-ahO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="KEg-fm-KeX"/>
+                            <constraint firstItem="HSJ-5U-rkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="267.66666666666669" id="Yel-am-QUO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L3d-ed-YeI" secondAttribute="bottom" constant="82" id="bVB-20-Ely"/>
+                            <constraint firstItem="avT-gM-p7K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c3K-mq-Dsn"/>
+                            <constraint firstItem="L3d-ed-YeI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oMq-ZF-LEa"/>
+                            <constraint firstItem="Tgl-yw-ahO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w5y-fo-Ti7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="im6-iO-MHV" id="lDd-OS-YlC"/>
+                        <outlet property="label2" destination="7qT-PE-2uq" id="fxS-PF-0mf"/>
+                        <outlet property="label3" destination="5IW-Ag-1xQ" id="MIE-DX-c6M"/>
+                        <outlet property="label4" destination="uaf-uO-Jp2" id="eei-ez-pP4"/>
+                        <outlet property="label5" destination="Exi-we-xs3" id="qcs-kx-RSa"/>
+                        <outlet property="label6" destination="HSJ-5U-rkT" id="O6w-qf-B7e"/>
+                        <outlet property="label7" destination="Ya5-SK-YJx" id="n3y-Ea-4DN"/>
+                        <outlet property="label8" destination="Ya5-SK-YJx" id="aKL-6Y-eKG"/>
+                        <outlet property="label9" destination="xzF-lw-hTC" id="sbu-Tj-pIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gato" width="225" height="225"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
